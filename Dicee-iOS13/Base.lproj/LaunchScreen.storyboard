@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.11" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.13"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,23 +16,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppBreweryBackground" translatesAutoresizingMaskIntoConstraints="NO" id="hDV-2r-SpX">
-                                <rect key="frame" x="-30" y="0.0" width="474" height="896"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="angryimg" translatesAutoresizingMaskIntoConstraints="NO" id="chL-g4-2Xo">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppBreweryLogo" translatesAutoresizingMaskIntoConstraints="NO" id="L73-FM-GDd">
-                                <rect key="frame" x="112" y="418.66666666666669" width="190" height="59"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sensitive Dice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRY-MX-J7F">
+                                <rect key="frame" x="14.666666666666657" y="546" width="385" height="64"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="50"/>
+                                <color key="textColor" red="0.098039215686274508" green="0.074509803921568626" blue="0.031372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SadBear" translatesAutoresizingMaskIntoConstraints="NO" id="Bok-aG-Ey5">
+                                <rect key="frame" x="-126" y="276" width="666" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="666" id="QPY-0X-BfK"/>
+                                    <constraint firstAttribute="height" constant="240" id="rRl-6y-IHd"/>
+                                </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="L73-FM-GDd" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="1db-x5-iqz"/>
-                            <constraint firstItem="hDV-2r-SpX" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="QG6-2s-aIE"/>
-                            <constraint firstItem="hDV-2r-SpX" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" constant="30" id="Qkd-TS-52T"/>
-                            <constraint firstItem="hDV-2r-SpX" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="-30" id="goO-U5-6AD"/>
-                            <constraint firstItem="L73-FM-GDd" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="m4c-X5-94d"/>
-                            <constraint firstAttribute="bottom" secondItem="hDV-2r-SpX" secondAttribute="bottom" id="pLe-ns-Vsl"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="chL-g4-2Xo" secondAttribute="trailing" id="6u9-Go-egT"/>
+                            <constraint firstItem="Bok-aG-Ey5" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="9GT-wF-Dan"/>
+                            <constraint firstItem="chL-g4-2Xo" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="IPD-NP-A6c"/>
+                            <constraint firstItem="bRY-MX-J7F" firstAttribute="top" secondItem="Bok-aG-Ey5" secondAttribute="bottom" constant="30" id="VbZ-3A-vxh"/>
+                            <constraint firstItem="chL-g4-2Xo" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="a0z-j8-uZd"/>
+                            <constraint firstItem="bRY-MX-J7F" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="130" id="eJR-zE-WXJ"/>
+                            <constraint firstAttribute="bottom" secondItem="chL-g4-2Xo" secondAttribute="bottom" id="fAQ-BP-v5k"/>
+                            <constraint firstItem="bRY-MX-J7F" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="gwb-Sr-oQp"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -40,7 +53,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="AppBreweryBackground" width="596" height="842"/>
-        <image name="AppBreweryLogo" width="190" height="59"/>
+        <image name="SadBear" width="666" height="666"/>
+        <image name="angryimg" width="400" height="900"/>
     </resources>
 </document>
